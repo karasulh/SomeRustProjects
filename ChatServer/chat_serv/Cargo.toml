@@ -1,0 +1,18 @@
+[package]
+name = "chat_serv"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+failure = "0.1.5"
+futures = "0.1.25"
+tokio = "0.1.15"
+
+serde = "1.0.89" #serialization and deseralization lib
+serde_json = "1.0.38"
+serde_derive = "1.0.89"
+
+tokio-channel = "0.1.0"
+chat_box = {path = "../chatbox/"}

@@ -1,0 +1,22 @@
+[package]
+name = "shop_base"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[[bin]]
+name = "shop_cli"
+path = "src/cli.rs"
+
+[lib]
+name = "shop_base"
+path = "src/lib.rs"
+
+
+[dependencies]
+diesel = {version = "1.4.1", features = ["postgres"]}
+dotenv = "0.13.0"
+failure = "0.1.5"
+serde = "1.0.90"
+serde_derive = "1.0.90"
